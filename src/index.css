@@ -1,13 +1,132 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.bg-green{
+  background-color: rgb(58, 124, 58);
+}
+.bg-green2{
+  background-color: rgb(104, 140, 104);
+}
+.green-focus:focus{
+  box-shadow: 0 0 0 0.2rem rgba(0, 128, 0, 0.25)
+}
+.animated-bg {
+  width: 100%;
+  animation: color-change 1s infinite alternate; /* Change color every 5 seconds */
+  background-color: rgb(4, 109, 4);; /* Initial background color */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes color-change {
+  0% {
+    background-color: rgb(4, 109, 4);
+  }
+  100% {
+    background-color: rgb(138, 27, 2);
+  }
+}
+.down{
+  background-color: rgb(16, 151, 16);
+  color: white;
+  width: 30%;
+}
+.down:hover{
+  background-color: green;
+  color: white;
+}
+.template-img {
+  height: calc(35vh - 20px); /* Adjust the height as needed */
+  object-fit: cover; /* Ensure the image covers the entire area */
+  margin: auto;
+}
+.row-centre{
+  text-align: center;
+}
+.text-green{
+  color: green;
+}
+.res{
+  border: 1px solid black;
+  width: 449px; /* Full width of the viewport */
+  height: 549px; /* Maintain A4 aspect ratio (1.414 = 297mm / 210mm) */
+  max-width: 100%; /* Ensure container does not exceed viewport width */
+  max-height: calc(100vh - 100px); /* Example: Max height, adjust as per your layout needs */
+  margin: auto; /* Center align container horizontally */
+   /* Optional: Hide overflow content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.temp1{
+  font-family: "Playfair Display", serif;
+}
+/* overflow: hidden; */
+.bg-mildgreen{
+  background-color: rgb(238, 249, 238);
+}
+.p-text{
+  margin: 0;
+  font-size: 0.5rem;
+}
+.p-text-2{
+  margin: 0;
+  font-size: 0.6rem;
+}
+.name-size{
+  font-size: 2rem;
+  
+}
+.temp2{
+  font-family: "Manrope", sans-serif;
+  color: black;
+}
+.underline{
+  border-bottom: 2px solid black;
+}
+.overline{
+  padding-top: 0.2rem;
+  border-top: 2px solid black;
+}
+.bg-pink{
+  background-color: rgb(243, 217, 222);
+}
+.temp4{
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.text-violet{
+  color: rgb(95, 59, 145);
+  font-size: 0.8rem;
+}
+.text-violet-2{
+  color: rgb(95, 59, 145);
+  font-size: 2rem;
+}
+.border-violet{
+  border: 2px solid rgb(95, 59, 145);
+}
+
+.side-line {
+  position: relative;
+  display: inline-block;
+}
+.side-line::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  width: 140px; /* Adjust the -20px if you need extra padding/margin */
+  border-top: 2px solid rgb(95, 59, 145);
+  transform: translateY(-50%);
+}
+.temp5{
+  font-family: "Archivo Black", sans-serif;
+}
+.bg-peach{
+  background-color: bisque;
+}
+.temp6{
+  color: rgb(51, 33, 12);
+}
+.border-right{
+  border-right: 1px solid rgb(51, 33, 12);
+}
+.border-btm{
+  border-bottom: 1px solid rgb(51, 33, 12);
 }
