@@ -9,8 +9,8 @@ const TempOne = () => {
       <div className="row p-3 temp1">
         
         {
-          name.split(" ").map(nm=>(
-            <div className="col-12 fw-bold text-green ms-4 name-size">{nm.toUpperCase()}</div>
+          name.split(" ").map((nm,index)=>(
+            <div key={index} className="col-12 fw-bold text-green ms-4 name-size">{nm.toUpperCase()}</div>
           ))
         }
         
